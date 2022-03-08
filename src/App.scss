@@ -1,0 +1,69 @@
+.app {
+  // height: calc(100vh - 150px);
+  height: 100vh;
+  overflow-x: hidden;
+
+  .home_link {
+    color: black;
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+    z-index: 10;
+    font-size: 2rem;
+    width: 4rem;
+
+    background-color: #fff;
+    aspect-ratio: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(58, 56, 56, 0.623);
+    // animation: arrow 1000ms infinite ease-in;
+    animation: arrow 1000ms ease-in-out 500ms infinite alternate-reverse;
+
+    a {
+      color: black;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      // z-index: 100;
+    }
+  }
+  @keyframes arrow {
+    0% {
+      transform: scale(0.9);
+    }
+    100% {
+      transform: scale(1.1);
+    }
+  }
+  .section {
+    background-color: #fff333;
+    width: 100%;
+    min-height: calc(100vh - 70px);
+    position: relative;
+    top: 70px;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    // !! hiding the scroll bar for the page
+
+    // scrollbar-width: none;
+    /*  &::-webkit-scrollbar {
+      display: none;
+    } */
+
+    > * {
+      // width: 100vw;
+      width: 100%;
+      min-height: calc(100vh - 70px);
+      // padding-block: 0.5rem;
+      padding-block: 5rem;
+      padding-inline: 2rem;
+      scroll-snap-align: start;
+    }
+  }
+}

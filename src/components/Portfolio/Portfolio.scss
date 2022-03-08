@@ -1,0 +1,21 @@
+@import "../../Global.scss";
+
+.projectList {
+  border-radius: 1.5rem;
+  transition: all 300ms ease-in-out;
+}
+.list {
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  list-style: none;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  border-radius: 1.5rem;
+  padding: 0.5rem 1.5rem;
+}
+
+.active--btn {
+  background-color: #f5de14;
+}
